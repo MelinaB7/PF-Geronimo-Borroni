@@ -1,0 +1,20 @@
+$color2: white;
+$color3: grey;
+$color4: #333;
+
+footer{
+    background-color: $color3;
+}
+    .footer {
+    background-color: $color4;
+    color: $color2;
+    padding: $medid;
+    text-align: center;
+    }
+    .footer a{
+    margin-left: $medid;
+    text-decoration: none;
+    color: $color2;
+    list-style: none;
+    margin-right: $medid;
+}
