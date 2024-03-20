@@ -17,6 +17,13 @@ $font3: "Yeseva One", serif;
 $font4: "Mate", serif;
 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
 .tracking-in-expand-fwd {
 	-webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both; }
@@ -52,13 +59,6 @@ $font4: "Mate", serif;
             transform: translateZ(0);
     opacity: 1;
     }
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
 }
 
 
