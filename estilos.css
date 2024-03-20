@@ -43,14 +43,6 @@
   box-sizing: border-box;
 }
 
-.navbar {
-  background-color: rgb(157, 20, 20);
-}
-
-.nav-link, .navbar-brand {
-  color: white !important;
-}
-
 conteiner p {
   margin-top: 0 !important;
 }
@@ -106,6 +98,19 @@ footer {
   color: white;
   list-style: none;
   margin-right: 20px;
+}
+
+.navbar {
+  background-color: rgb(157, 20, 20);
+}
+
+.nav-link, .navbar-brand {
+  color: white !important;
+  font-family: "Prata", serif;
+}
+
+.navbar-brand {
+  font-family: "Prata", serif;
 }
 
 /*# sourceMappingURL=estilos.css.map */

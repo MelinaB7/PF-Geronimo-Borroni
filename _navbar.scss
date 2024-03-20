@@ -1,0 +1,16 @@
+
+$color1: rgb(157, 20, 20);
+$color2: white;
+
+.navbar{
+    background-color: $color1;
+}
+
+    .nav-link, .navbar-brand{
+    color: $color2 !important;
+    font-family: "Prata", serif;
+
+}
+.navbar-brand {
+    font-family: "Prata", serif;
+}

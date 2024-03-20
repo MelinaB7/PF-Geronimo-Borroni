@@ -60,14 +60,7 @@ $font4: "Mate", serif;
     box-sizing: border-box;
     
 }
-.navbar{
-    background-color: $color1;
-}
 
-    .nav-link, .navbar-brand{
-    color: $color2 !important;
-
-    }
 
 conteiner p {
     margin-top: 0!important;
@@ -107,4 +100,6 @@ h5{
     color: $color2;
 }
 
-@import "footer"
+
+@import "footer";
+@import "navbar";
