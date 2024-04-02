@@ -16,6 +16,26 @@ $font1:"Prata", serif;
 $font3: "Yeseva One", serif;
 $font4: "Mate", serif;
 
+@mixin tracking-in-expand-fwd {
+    -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@keyframes tracking-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+        transform: translateZ(-700px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
 
 *{
     margin: 0;
@@ -25,53 +45,20 @@ $font4: "Mate", serif;
 }
 
 .tracking-in-expand-fwd {
-	-webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both; }
-
-    @-webkit-keyframes tracking-in-expand-fwd {
-    0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px);
-    transform: translateZ(-700px);
-    opacity: 0;
-    }
-    40% {
-    opacity: 0.6;
-    }
-    100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    opacity: 1;
-    }
-}
-@keyframes tracking-in-expand-fwd {
-    0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px);
-            transform: translateZ(-700px);
-    opacity: 0;
-    }
-    40% {
-    opacity: 0.6;
-    }
-    100% {
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
-    opacity: 1;
-    }
+	@include tracking-in-expand-fwd;
 }
 
-
-conteiner p {
+.conteiner p {
     margin-top: 0!important;
 
 }
     p {
         font-family: "Mate", serif;
     }
+    
 h1 {
     margin-top: $medid!important;
-    font-family: "Prata", serif; 
+    font-family: $font1; 
 }
 h5{
     font-family: "Yeseva One", serif;
@@ -90,7 +77,7 @@ h5{
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    box-shadow: 0px 1px 10px rgba (0,0,0,0.3);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
     z-index:100;
     
 

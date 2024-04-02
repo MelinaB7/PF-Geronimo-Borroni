@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Yeseva+One&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.tracking-in-expand-fwd {
-  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
 @keyframes tracking-in-expand-fwd {
   0% {
     letter-spacing: -0.5em;
@@ -23,7 +14,17 @@
     opacity: 1;
   }
 }
-conteiner p {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tracking-in-expand-fwd {
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.conteiner p {
   margin-top: 0 !important;
 }
 
@@ -52,7 +53,7 @@ h5 {
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
-  box-shadow: 0px 1px 10px rgba 0, 0, 0, 0.3;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
 
