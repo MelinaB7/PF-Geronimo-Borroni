@@ -1,48 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mate:ital@0;1&family=Yeseva+One&display=swap");
-.tracking-in-expand-fwd {
-  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-}
-
-@-webkit-keyframes tracking-in-expand-fwd {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px);
-    transform: translateZ(-700px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    opacity: 1;
-  }
-}
-@keyframes tracking-in-expand-fwd {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-700px);
-    transform: translateZ(-700px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    opacity: 1;
-  }
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.tracking-in-expand-fwd {
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
 conteiner p {
   margin-top: 0 !important;
 }
@@ -81,6 +61,11 @@ h5 {
   color: white;
 }
 
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 footer {
   background-color: grey;
 }
@@ -111,6 +96,4 @@ footer {
 
 .navbar-brand {
   font-family: "Prata", serif;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

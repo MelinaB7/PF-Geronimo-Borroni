@@ -100,6 +100,11 @@ h5{
     color: $color2;
 }
 
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
 
 @import "footer";
 @import "navbar";
